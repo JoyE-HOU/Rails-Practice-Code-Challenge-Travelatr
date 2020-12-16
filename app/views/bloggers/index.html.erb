@@ -1,0 +1,8 @@
+<h1>Hello to Travelatr: List of Bloggers</h1>
+<ul>
+<%@bloggers.each do | b |%>
+    <li>
+        <%= link_to b.name, blogger_path(b)%>
+    </li>
+    <%end%>
+</ul>

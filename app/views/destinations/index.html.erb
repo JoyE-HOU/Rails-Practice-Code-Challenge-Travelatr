@@ -1,0 +1,8 @@
+<h1>Hello to Travelatr: List of Destinations</h1>
+<ul>
+<%@destinations.each do | d |%>
+    <li>
+        <%= link_to d.name, destination_path(d)%>
+    </li>
+    <%end%>
+</ul>
